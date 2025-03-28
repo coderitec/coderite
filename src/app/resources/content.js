@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Franc Chiname",
+  lastName: "Enemuo",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Frontend",
+  avatar: "/images/me.jpg",
+  location: "Africa/Lagos", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Igbo", "Yoruba", "Pigin", "French"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -17,8 +17,7 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about technology, focusing on frontend development with Next.js. I also have a keen interest in sports, religion, and politics.
     </>
   ),
 };
@@ -29,12 +28,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/coderitec",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/franc-enemuo/",
   },
   {
     name: "X",
@@ -44,7 +43,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:francenemuo@gmail.com",
   },
 ];
 
@@ -52,11 +51,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Frontend developer, educator, and builder.</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+I'm Francis Enemuo, a frontend developer specializing in Next.js. I teach React at Univelcity and enjoy building projects in my free time. <br/> Beyond coding, I have a strong interest in sports, religion, and politics.
     </>
   ),
 };
@@ -81,9 +79,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+Francis Enemuo is a frontend developer based in Nigeria, passionate about building seamless and efficient web experiences with Next.js. His work focuses on crafting interactive user interfaces, optimizing performance, and bridging technology with user-centric design.
       </>
     ),
   },
@@ -92,44 +88,66 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
+        company: "Univelcity",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "Frontend Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+          I have trained over 160 individuals in web development, equipping them with the skills to build modern, responsive applications using HTML, CSS, JavaScript, React, and Next.js.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Revamped the UI/UX of a web platform, leading to a 20% boost in user engagement and a 30% reduction in load times.
+          </>,
+          <>
+            Led the integration of AI-driven tools into frontend workflows, enhancing development speed by 50%.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/anniversary4.jpg",
             alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/team.jpg",
+            alt: "Univelcity at 6",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
+        company: "Embtec Konzultz",
         timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        role: "Software Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            I have trained over 160 individuals in web development, teaching HTML, CSS, JavaScript, React, and Next.js. My hands-on approach helps students build real-world projects and develop strong frontend skills.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Beyond web development, I have introduced kids and teens to Python, simplifying coding concepts to make learning engaging and fun. I aim to spark curiosity and creativity in young minds.
+          </>,
+          <>
+            I also facilitate Scrabble and Chess sessions, helping students develop critical thinking and strategic skills in a fun, competitive environment.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/pic4.jpg",
+            alt: "Embtec holiday",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/pic15.jpg",
+            alt: "Embtec holiday",
+            width: 16,
+            height: 9,
+          },
+
+        ],
       },
     ],
   },
@@ -138,12 +156,12 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Ahmadu Bello University",
+        description: <>Computer Science.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Udacity",
+        description: <>FullStack Professional Certification.</>,
       },
     ],
   },
@@ -212,7 +230,7 @@ const gallery = {
     {
       src: "/images/gallery/img-01.jpg",
       alt: "image",
-      orientation: "vertical",
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-02.jpg",
